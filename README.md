@@ -8,4 +8,4 @@ scoop install extras/glazewm
 ```
 
 ## Update Configuration
-Copy your [configuration] to your GlazeWM configuration which is usually located at `%HOMEPATH%/.glaze-wm/config.yaml`. Then restart GlazeWM.
+Copy your [configuration](config.yaml) to your GlazeWM configuration which is usually located at `%HOMEPATH%/.glaze-wm/config.yaml`. Then restart GlazeWM.
