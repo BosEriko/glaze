@@ -1,5 +1,5 @@
 # GlazeWM (Window Manager)
-Download [Scoop](https://github.com/BosEriko/scoop) as your package manager then install [Visual Studio Code](https://scoop.sh/#/apps?q=glazewm).
+Download [Scoop](https://github.com/BosEriko/scoop) as your package manager then install [GlazeWM](https://scoop.sh/#/apps?q=glazewm).
 
 ## Install GlazeWM
 ```sh
