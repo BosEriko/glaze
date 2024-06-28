@@ -6,6 +6,10 @@ Download [Scoop](https://github.com/BosEriko/scoop) as your package manager then
 scoop bucket add extras
 scoop install extras/glazewm
 ```
+## Sync your settings
+Go to the folder where the current `config.yaml` is located and run the following script.
+```sh
+curl -fsSL https://raw.githubusercontent.com/BosEriko/glaze/HEAD/install.sh | sh
+```
 
-## Update Configuration
-Copy your [configuration](config.yaml) to your GlazeWM configuration which is usually located at `%HOMEPATH%/.glaze-wm/config.yaml`. Then restart GlazeWM.
+_Note: `config.yaml` is usually located at `%HOMEPATH%/.glaze-wm`._
