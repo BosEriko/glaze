@@ -155,7 +155,7 @@ keybindings:
 
   - command: "focus workspace 2"
     binding: "LMenu+2"
-  - commands: ["focus workspace 2", "exec wt"]
+  - commands: ["focus workspace 2", "exec powershell -command \"Start-Process code -ArgumentList '.' -NoNewWindow\""]
     binding: "LMenu+Shift+2"
 
   - command: "focus workspace 3"
