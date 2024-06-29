@@ -75,7 +75,7 @@ bar:
   opacity: 1
   background: *mantle
   foreground: *mauve
-  font_family: "JetBrains Mono"
+  font_family: "FiraMono Nerd Font Mono"
   font_size: "12px"
   padding: "0px 5px"
   offset_x: "14px"
