@@ -75,12 +75,12 @@ bar:
   opacity: 1
   background: *mantle
   foreground: *mauve
-  font_family: "FiraMono Nerd Font Mono"
+  font_family: "JetBrains Mono"
   font_size: "12px"
   padding: "0px 5px"
   offset_x: "14px"
   offset_y: "10px"
-  border_radius: "10px"
+  border_radius: "5px"
   components_left:
     - type: "workspaces"
       focused_workspace_background: "transparent"
@@ -117,7 +117,7 @@ bar:
       margin: 0 5px
       background: *base
       border_color: *base
-      border_radius: "10px"
+      border_radius: "5px"
       border_width: "10px"
 
   components_right:
@@ -149,7 +149,7 @@ bar:
       # margin: "0 0 0 5px"
       background: *base
       border_color: *base
-      border_radius: "10px"
+      border_radius: "5px"
       border_width: "10px"
 
     - type: "memory"
@@ -159,7 +159,7 @@ bar:
       margin: "0 0 0 5px"
       background: *base
       border_color: *base
-      border_radius: "10px"
+      border_radius: "5px"
       border_width: "10px"
 
     - type: "volume"
@@ -182,30 +182,30 @@ bar:
 
 workspaces:
   - name: 1
-    display_name: ""
+    display_name: "🌎"
     bind_to_monitor: 2
   - name: 2
-    display_name: ""
+    display_name: "💻"
     bind_to_monitor: 2
   - name: 3
-    display_name: ""
+    display_name: "🎮"
     bind_to_monitor: 2
   - name: 4
-    display_name: ""
+    display_name: "⚪"
   - name: 5
-    display_name: ""
+    display_name: "⚪"
   - name: 6
-    display_name: ""
+    display_name: "⚪"
   - name: 7
-    display_name: ""
+    display_name: "⚪"
   - name: 8
-    display_name: ""
+    display_name: "🎧"
     bind_to_monitor: 1
   - name: 9
-    display_name: ""
+    display_name: "📒"
     bind_to_monitor: 1
   - name: 0
-    display_name: "󰍡"
+    display_name: "🗨"
     bind_to_monitor: 1
 
 
