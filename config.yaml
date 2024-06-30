@@ -121,22 +121,6 @@ bar:
       border_width: "10px"
 
   components_right:
-    - type: "tiling direction"
-      label_horizontal: "⮂ "
-      label_vertical: "⮁ "
-      background: "transparent"
-      margin: "0px"
-
-    - type: "network"
-      label_no_internet: "❎"
-      label_ethernet: "✅"
-      label_wifi_strength_0: "0️⃣"
-      label_wifi_strength_25: "1️⃣"
-      label_wifi_strength_50: "2️⃣"
-      label_wifi_strength_75: "3️⃣"
-      label_wifi_strength_100: "4️⃣"
-      margin: "0 10px"
-
     - type: "binding mode"
       background: "#ffffff33"
       margin: "0 5px 0 5px"
@@ -167,18 +151,29 @@ bar:
       label_medium: " 🔊{volume_level}% "
       label_high: " 🔊{volume_level}% "
       label_mute: " 🔊{volume_level}% "
-
-    # - type: "battery"
-    #   label_draining: "{battery_level}% 🔋 "
-    #   label_power_saver: "{battery_level}% 🔋 "
-    #   label_charging: "{battery_level}% ⚡ "
-    #   margin: "0 0 0 10px"
+      margin: "0 10px"
 
     - type: "clock"
       # Documentation on formatting date/time string:
       # https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings
       time_formatting: "🕒 hh:mm tt  🗓️ ddd d/MM"
-      margin: "0 10px"
+      margin: "0 10px 0 0"
+
+    - type: "tiling direction"
+      label_horizontal: "⮂ "
+      label_vertical: "⮁ "
+      background: "transparent"
+      margin: "0 10px 0 0"
+
+    - type: "network"
+      label_no_internet: "❎"
+      label_ethernet: "✅"
+      label_wifi_strength_0: "0️⃣"
+      label_wifi_strength_25: "1️⃣"
+      label_wifi_strength_50: "2️⃣"
+      label_wifi_strength_75: "3️⃣"
+      label_wifi_strength_100: "4️⃣"
+      margin: "0 10px 0 0"
 
 workspaces:
   - name: 1
