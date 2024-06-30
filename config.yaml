@@ -188,10 +188,10 @@ workspaces:
     display_name: "💻"
     bind_to_monitor: 2
   - name: 3
-    display_name: "🎮"
+    display_name: "🎧"
     bind_to_monitor: 2
   - name: 4
-    display_name: "🎧"
+    display_name: "🎮"
     bind_to_monitor: 2
   - name: 5
     display_name: "⚪"
@@ -308,13 +308,13 @@ keybindings:
 
   - command: "focus workspace 3"
     binding: "LMenu+3"
-  - commands: ["focus workspace 3", "exec %localappdata%/Programs/tetrio-desktop/TETR.IO.exe"]
+  - commands: ["focus workspace 3", "exec %appdata%/Spotify/Spotify.exe"]
     binding: "LMenu+Shift+3"
 
   - command: "focus workspace 4"
     binding: "LMenu+4"
-  - commands: ["focus workspace 8", "exec %appdata%/Spotify/Spotify.exe"]
-    binding: "LMenu+Shift+8"
+  - commands: ["focus workspace 4", "exec %localappdata%/Programs/tetrio-desktop/TETR.IO.exe"]
+    binding: "LMenu+Shift+4"
 
   - command: "focus workspace 5"
     binding: "LMenu+5"
