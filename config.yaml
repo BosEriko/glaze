@@ -191,7 +191,8 @@ workspaces:
     display_name: "🎮"
     bind_to_monitor: 2
   - name: 4
-    display_name: "⚪"
+    display_name: "🎧"
+    bind_to_monitor: 2
   - name: 5
     display_name: "⚪"
   - name: 6
@@ -199,8 +200,7 @@ workspaces:
   - name: 7
     display_name: "⚪"
   - name: 8
-    display_name: "🎧"
-    bind_to_monitor: 1
+    display_name: "⚪"
   - name: 9
     display_name: "📒"
     bind_to_monitor: 1
@@ -313,6 +313,8 @@ keybindings:
 
   - command: "focus workspace 4"
     binding: "LMenu+4"
+  - commands: ["focus workspace 8", "exec %appdata%/Spotify/Spotify.exe"]
+    binding: "LMenu+Shift+8"
 
   - command: "focus workspace 5"
     binding: "LMenu+5"
@@ -325,8 +327,6 @@ keybindings:
 
   - command: "focus workspace 8"
     binding: "LMenu+8"
-  - commands: ["focus workspace 8", "exec %appdata%/Spotify/Spotify.exe"]
-    binding: "LMenu+Shift+8"
 
   - command: "focus workspace 9"
     binding: "LMenu+9"
