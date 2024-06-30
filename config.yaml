@@ -100,26 +100,6 @@ bar:
   components_center:
     - type: "window title"
 
-    - type: "weather"
-      latitude: 28.7041
-      longitude: 77.1025
-      label: "{temperature_celsius}°C"
-      label_sun: "☀️ {temperature_celsius}°C"
-      label_moon: "🌙 {temperature_celsius}°C"
-      label_cloud_moon: "☁️ {temperature_celsius}°C"
-      label_cloud_sun: "⛅ {temperature_celsius}°C"
-      label_cloud_moon_rain: "🌧️ {temperature_celsius}°C"
-      label_cloud_sun_rain: "🌦️ {temperature_celsius}°C"
-      label_cloud_rain: "🌧️ {temperature_celsius}°C"
-      label_snow_flake: "❄️ {temperature_celsius}°C"
-      label_thunderstorm: "⚡ {temperature_celsius}°C"
-      label_cloud: "☁️ {temperature_celsius}°C"
-      margin: 0 5px
-      background: *base
-      border_color: *base
-      border_radius: "5px"
-      border_width: "10px"
-
   components_right:
     - type: "binding mode"
       background: "#ffffff33"
@@ -144,6 +124,22 @@ bar:
       label_high: " 🔊{volume_level}% "
       label_mute: " 🔊{volume_level}% "
       margin: "0 10px 0 0"
+
+    - type: "weather"
+      latitude: 28.7041
+      longitude: 77.1025
+      label: "{temperature_celsius}°C"
+      label_sun: "☀️ {temperature_celsius}°C"
+      label_moon: "🌙 {temperature_celsius}°C"
+      label_cloud_moon: "☁️ {temperature_celsius}°C"
+      label_cloud_sun: "⛅ {temperature_celsius}°C"
+      label_cloud_moon_rain: "🌧️ {temperature_celsius}°C"
+      label_cloud_sun_rain: "🌦️ {temperature_celsius}°C"
+      label_cloud_rain: "🌧️ {temperature_celsius}°C"
+      label_snow_flake: "❄️ {temperature_celsius}°C"
+      label_thunderstorm: "⚡ {temperature_celsius}°C"
+      label_cloud: "☁️ {temperature_celsius}°C"
+      margin: "0 20px 0 0"
 
     - type: "clock"
       # Documentation on formatting date/time string:
