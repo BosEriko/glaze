@@ -224,7 +224,8 @@ window_rules:
     match_process_name: "steam"
 
   - command: "resize borders 0px -7px -7px -7px"
-    match_process_name: "Telegram"
+    match_process_name: "vivaldi"
+
 
   - command: "resize borders 0px -7px -7px -7px"
     match_process_name: "EpicGamesLauncher"
@@ -297,7 +298,7 @@ keybindings:
   # to start Windows Terminal and Git Bash respectively.
   - command: "focus workspace 1"
     binding: "LMenu+1"
-  - commands: ["focus workspace 1", "exec firefox.exe"]
+  - commands: ["focus workspace 1", "exec vivaldi"]
     binding: "LMenu+Shift+1"
 
   - command: "focus workspace 2"
@@ -334,7 +335,7 @@ keybindings:
 
   - command: "focus workspace 0"
     binding: "LMenu+0"
-  - commands: ["focus workspace 0", "exec firefox.exe"]
+  - commands: ["focus workspace 0", "exec vivaldi"]
     binding: "LMenu+Shift+0"
 
   - commands: ["move to workspace 1", "focus workspace 1"]
