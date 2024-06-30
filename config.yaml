@@ -200,7 +200,8 @@ workspaces:
   - name: 7
     display_name: "⚪"
   - name: 8
-    display_name: "⚪"
+    display_name: "🎥"
+    bind_to_monitor: 1
   - name: 9
     display_name: "📒"
     bind_to_monitor: 1
