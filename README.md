@@ -7,6 +7,12 @@ scoop bucket add extras
 scoop install extras/glazewm
 ```
 
+## Install Font
+```sh
+scoop bucket add nerd-fonts
+scoop install nerd-fonts/JetBrainsMono-NF-Mono
+```
+
 ## Sync your settings
 Go to the folder where the current `config.yaml` is located and run the following script.
 ```sh

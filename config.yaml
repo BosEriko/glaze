@@ -77,7 +77,7 @@ bar:
   opacity: 1
   background: *darkblue
   foreground: *gullgray
-  font_family: "JetBrains Mono Nerd Font"
+  font_family: "JetbrainsMonoNL Nerd Font Mono"
   font_size: "12px"
   padding: "0px 5px"
   offset_x: "10px"
