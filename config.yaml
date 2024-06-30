@@ -77,6 +77,7 @@ bar:
   opacity: 1
   background: *darkblue
   foreground: *gullgray
+  # Get icons here: https://www.nerdfonts.com/cheat-sheet
   font_family: "JetbrainsMonoNL Nerd Font Mono"
   font_size: "12px"
   padding: "0px 5px"
@@ -85,6 +86,7 @@ bar:
   border_radius: "5px"
   components_left:
     - type: "workspaces"
+      font_size: "20px"
       focused_workspace_background: "transparent"
       displayed_workspace_background: "transparent"
       default_workspace_background: "transparent"
@@ -167,31 +169,31 @@ bar:
 
 workspaces:
   - name: 1
-    display_name: "🌎"
+    display_name: ""
     bind_to_monitor: 2
   - name: 2
-    display_name: "💻"
+    display_name: ""
     bind_to_monitor: 2
   - name: 3
-    display_name: "🎧"
+    display_name: ""
     bind_to_monitor: 2
   - name: 4
-    display_name: "🎮"
+    display_name: "󰖺"
     bind_to_monitor: 2
   - name: 5
-    display_name: "⚪"
+    display_name: ""
   - name: 6
-    display_name: "⚪"
+    display_name: ""
   - name: 7
-    display_name: "⚪"
+    display_name: ""
   - name: 8
-    display_name: "🎥"
+    display_name: ""
     bind_to_monitor: 1
   - name: 9
-    display_name: "📒"
+    display_name: "󰏫"
     bind_to_monitor: 1
   - name: 0
-    display_name: "🗨"
+    display_name: "󰟶"
     bind_to_monitor: 1
 
 window_rules:
