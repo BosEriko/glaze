@@ -12,6 +12,7 @@ sky: &sky "#89dceb"
 sapphire: &sapphire "#74c7ec"
 blue: &blue "#89b4fa"
 lavender: &lavender "#b4befe"
+gullgray: &gullgray "#a3a7bb"
 text: &text "#cdd6f4"
 subtext1: &subtext1 "#bac2de"
 subtext0: &subtext0 "#a6adc8"
@@ -23,6 +24,7 @@ surface1: &surface1 "#45475a"
 surface0: &surface0 "#313244"
 base: &base "#1e1e2e"
 mantle: &mantle "#181825"
+darkblue: &darkblue "#1b1e28"
 crust: &crust "#11111b"
 
 general:
@@ -73,8 +75,8 @@ bar:
   height: "30px"
   position: "top"
   opacity: 1
-  background: *mantle
-  foreground: *mauve
+  background: *darkblue
+  foreground: *gullgray
   font_family: "FiraMono Nerd Font Mono"
   font_size: "12px"
   padding: "0px 5px"
@@ -86,7 +88,7 @@ bar:
       focused_workspace_background: "transparent"
       displayed_workspace_background: "transparent"
       default_workspace_background: "transparent"
-      focused_workspace_foreground: *mauve
+      focused_workspace_foreground: *gullgray
       default_workspace_foreground: *overlay0
 
     # - type: "music"
