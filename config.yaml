@@ -93,13 +93,13 @@ bar:
       focused_workspace_foreground: *gullgray
       default_workspace_foreground: *overlay0
 
-    # - type: "music"
-    #   label_not_playing: ""
-    #   label_paused: "🎵 {song_title} - {artist_name}"
-    #   label_playing: "🎵 {song_title} - {artist_name}"
-    #   max_title_length: 30
-    #   max_artist_length: 20
-    #   margin: "0 0 0 20px"
+    - type: "music"
+      label_not_playing: ""
+      label_paused: "󰏤 {song_title}"
+      label_playing: "▶ {song_title}"
+      max_title_length: 30
+      max_artist_length: 20
+      margin: "0 0 0 100px"
 
   components_center:
     - type: "window title"
