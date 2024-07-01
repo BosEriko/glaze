@@ -99,7 +99,7 @@ bar:
       label_playing: "▶ {song_title}"
       max_title_length: 30
       max_artist_length: 20
-      margin: "0 0 0 100px"
+      margin: "0 0 0 15px"
 
   components_center:
     - type: "window title"
