@@ -96,8 +96,8 @@ bar:
   components_center:
     - type: "music"
       label_not_playing: ""
-      label_paused: "󰏤 {song_title}"
-      label_playing: "▶ {song_title}"
+      label_paused: "󰏤 {song_title} - {artist_name}"
+      label_playing: "▶ {song_title} - {artist_name}"
       max_title_length: 30
       max_artist_length: 20
       margin: "0 0 0 15px"
