@@ -298,8 +298,8 @@ keybindings:
 
   - command: "focus workspace 4"
     binding: "LMenu+4"
-  - commands: ["focus workspace 4", "exec '%userprofile%/scoop/apps/youtube-music/current/YouTube Music.exe'"]
-    binding: "LMenu+Shift+4"
+  - commands: ["focus workspace 3", "exec vivaldi https://music.youtube.com"]
+    binding: "LMenu+Shift+3"
 
   - command: "focus workspace 5"
     binding: "LMenu+5"
