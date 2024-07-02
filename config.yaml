@@ -298,12 +298,12 @@ keybindings:
 
   - command: "focus workspace 4"
     binding: "LMenu+4"
-  - commands: ["focus workspace 3", "exec vivaldi https://music.youtube.com"]
-    binding: "LMenu+Shift+3"
+  - commands: ["focus workspace 4", "exec vivaldi https://music.youtube.com"]
+    binding: "LMenu+Shift+4"
 
   - command: "focus workspace 5"
     binding: "LMenu+5"
-  - commands: ["focus workspace 5", "exec %localappdata%/Programs/tetrio-desktop/TETR.IO.exe"]
+  - commands: ["focus workspace 5", "exec vivaldi https://tetr.io"]
     binding: "LMenu+Shift+5"
 
   - command: "focus workspace 6"
