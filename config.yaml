@@ -303,7 +303,7 @@ keybindings:
 
   - command: "focus workspace 5"
     binding: "LMenu+5"
-  - commands: ["focus workspace 5", "exec vivaldi --new-window https://tetr.io"]
+  - commands: ["focus workspace 5", "exec %localappdata%/Programs/tetrio-desktop/TETR.IO.exe"]
     binding: "LMenu+Shift+5"
 
   - command: "focus workspace 6"
