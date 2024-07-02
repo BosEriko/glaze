@@ -283,7 +283,7 @@ keybindings:
   # to start Windows Terminal and Git Bash respectively.
   - command: "focus workspace 1"
     binding: "LMenu+1"
-  - commands: ["focus workspace 1", "exec vivaldi"]
+  - commands: ["focus workspace 1", "exec vivaldi --new-window https://app.raindrop.io/my/45548736"]
     binding: "LMenu+Shift+1"
 
   - command: "focus workspace 2"
@@ -293,17 +293,17 @@ keybindings:
 
   - command: "focus workspace 3"
     binding: "LMenu+3"
-  - commands: ["focus workspace 3", "exec vivaldi https://chatgpt.com"]
+  - commands: ["focus workspace 3", "exec vivaldi --new-window https://chatgpt.com"]
     binding: "LMenu+Shift+3"
 
   - command: "focus workspace 4"
     binding: "LMenu+4"
-  - commands: ["focus workspace 4", "exec vivaldi https://music.youtube.com"]
+  - commands: ["focus workspace 4", "exec vivaldi --new-window https://music.youtube.com"]
     binding: "LMenu+Shift+4"
 
   - command: "focus workspace 5"
     binding: "LMenu+5"
-  - commands: ["focus workspace 5", "exec vivaldi https://tetr.io"]
+  - commands: ["focus workspace 5", "exec vivaldi --new-window https://tetr.io"]
     binding: "LMenu+Shift+5"
 
   - command: "focus workspace 6"
@@ -322,7 +322,7 @@ keybindings:
 
   - command: "focus workspace 0"
     binding: "LMenu+0"
-  - commands: ["focus workspace 0", "exec vivaldi"]
+  - commands: ["focus workspace 0", "exec vivaldi --new-window https://discord.com/channels/941319357106110524/950286023085146152"]
     binding: "LMenu+Shift+0"
 
   - commands: ["move to workspace 1", "focus workspace 1"]
