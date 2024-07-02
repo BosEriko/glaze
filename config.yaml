@@ -90,7 +90,7 @@ bar:
       focused_workspace_background: "transparent"
       displayed_workspace_background: "transparent"
       default_workspace_background: "transparent"
-      focused_workspace_foreground: *gullgray
+      focused_workspace_foreground: *green
       default_workspace_foreground: *overlay0
 
   components_center:
@@ -293,6 +293,8 @@ keybindings:
 
   - command: "focus workspace 3"
     binding: "LMenu+3"
+  - commands: ["focus workspace 3", "exec vivaldi https://chatgpt.com"]
+    binding: "LMenu+Shift+3"
 
   - command: "focus workspace 4"
     binding: "LMenu+4"
