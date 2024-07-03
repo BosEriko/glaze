@@ -276,9 +276,6 @@ keybindings:
   - command: "close"
     binding: "LMenu+Shift+Q"
 
-  - command: "exec wsl --terminate Ubuntu"
-    binding: "LMenu+Shift+W"
-
   - command: "exit wm"
     binding: "LMenu+Shift+E"
 
