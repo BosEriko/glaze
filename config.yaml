@@ -276,8 +276,8 @@ keybindings:
   - command: "close"
     binding: "LMenu+Shift+Q"
 
-  - command: "exit wm"
-    binding: "LMenu+Shift+E"
+  # - command: "exit wm"
+  #   binding: "LMenu+Shift+E"
 
   - command: "reload config"
     binding: "LMenu+Shift+R"
