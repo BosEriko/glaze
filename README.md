@@ -16,7 +16,7 @@ scoop install nerd-fonts/JetBrainsMono-NF-Mono
 _Note: If the font doesn't show, please restart your pc._
 
 ## Automatic Start
-To make it start automatically create a shortcut of the GlazeWM executable and put it inside the startup folder (`win`+`r` then type `shell:startup`).
+To make it start automatically create a shortcut (hold `alt` and drag the executable) of the GlazeWM executable and put it inside the startup folder (`win`+`r` then type `shell:startup`).
 
 _Note: GlazeWM executable is usually located at `%userprofile%/scoop/apps/glazewm/current`._
 
