@@ -286,7 +286,7 @@ keybindings:
   # to start Windows Terminal and Git Bash respectively.
   - command: "focus workspace 1"
     binding: "LMenu+1"
-  - commands: ["focus workspace 1", "exec vivaldi --new-window https://app.raindrop.io/my/45548736"]
+  - commands: ["focus workspace 1", "exec vivaldi"]
     binding: "LMenu+Shift+1"
 
   - command: "focus workspace 2"
