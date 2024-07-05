@@ -322,7 +322,7 @@ keybindings:
 
   - command: "focus workspace 9"
     binding: "LMenu+9"
-  - commands: ["focus workspace 9", "exec %localappdata%/Obsidian/Obsidian.exe"]
+  - commands: ["focus workspace 9", "exec %userprofile%/scoop/apps/notion/current/Notion.exe"]
     binding: "LMenu+Shift+9"
 
   - command: "focus workspace 0"
