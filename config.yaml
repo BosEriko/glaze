@@ -314,6 +314,8 @@ keybindings:
 
   - command: "focus workspace 7"
     binding: "LMenu+7"
+  - commands: ["focus workspace 7", "exec %userprofile%/scoop/apps/chatty/current/Chatty.exe"]
+    binding: "LMenu+Shift+7"
 
   - command: "focus workspace 8"
     binding: "LMenu+8"
