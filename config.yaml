@@ -306,7 +306,7 @@ keybindings:
 
   - command: "focus workspace 5"
     binding: "LMenu+5"
-  - commands: ["focus workspace 5", "exec vivaldi --new-window https://music.youtube.com"]
+  - commands: ["focus workspace 5", "exec '%userprofile%/scoop/apps/youtube-music/current/YouTube Music.exe'"]
     binding: "LMenu+Shift+5"
 
   - command: "focus workspace 6"
