@@ -155,15 +155,15 @@ bar:
       background: "transparent"
       margin: "0 5px 0 10px"
 
-    # - type: "network"
-    #   label_no_internet: "❎"
-    #   label_ethernet: "✅"
-    #   label_wifi_strength_0: "0️⃣"
-    #   label_wifi_strength_25: "1️⃣"
-    #   label_wifi_strength_50: "2️⃣"
-    #   label_wifi_strength_75: "3️⃣"
-    #   label_wifi_strength_100: "4️⃣"
-    #   margin: "0 10px 0 0"
+    - type: "network"
+      label_no_internet: "❎"
+      label_ethernet: "✅"
+      label_wifi_strength_0: "0️⃣"
+      label_wifi_strength_25: "1️⃣"
+      label_wifi_strength_50: "2️⃣"
+      label_wifi_strength_75: "3️⃣"
+      label_wifi_strength_100: "4️⃣"
+      margin: "0 10px 0 0"
 
 workspaces:
   - name: 1
@@ -286,7 +286,7 @@ keybindings:
   # to start Windows Terminal and Git Bash respectively.
   - command: "focus workspace 1"
     binding: "LMenu+1"
-  - commands: ["focus workspace 1", "exec vivaldi --new-window https://app.raindrop.io/my/45548736"]
+  - commands: ["focus workspace 1", "exec vivaldi --new-window https://app.daily.dev/"]
     binding: "LMenu+Shift+1"
 
   - command: "focus workspace 2"
