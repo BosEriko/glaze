@@ -214,10 +214,6 @@ window_rules:
   - command: "resize borders 0px -7px -7px -7px"
     match_process_name: "vivaldi"
 
-
-  - command: "resize borders 0px -7px -7px -7px"
-    match_process_name: "EpicGamesLauncher"
-
 keybindings:
   - command: "focus left"
     bindings: ["LMenu+H", "LMenu+Left"]
