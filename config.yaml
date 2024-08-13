@@ -214,6 +214,12 @@ window_rules:
   - command: "resize borders 0px -7px -7px -7px"
     match_process_name: "vivaldi"
 
+  - command: "resize borders 0px -7px -7px -7px"
+    match_process_name: "FortniteClient-Win64-Shipping"
+
+  - command: "resize borders 0px -7px -7px -7px"
+    match_process_name: "UnrealEditorFortnite-Win64-Shipping"
+
 keybindings:
   - command: "focus left"
     bindings: ["LMenu+H", "LMenu+Left"]
