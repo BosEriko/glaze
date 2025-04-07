@@ -333,7 +333,10 @@ keybindings:
 
   - command: "focus workspace 0"
     binding: "LMenu+0"
-  - commands: ["focus workspace 0", "exec vivaldi --new-window https://bit.ly/new-xp-spot"]
+  - commands:
+       - "focus workspace 0"
+       - "exec vivaldi --new-window https://bit.ly/new-xp-spot"
+       - "exec vivaldi --new-window https://discord.com/channels/941319357106110524/950286023085146152"
     binding: "LMenu+Shift+0"
 
   - commands: ["move to workspace 1", "focus workspace 1"]
