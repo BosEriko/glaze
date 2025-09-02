@@ -194,7 +194,7 @@ workspaces:
     display_name: "󰏫"
     bind_to_monitor: 1
   - name: 0
-    display_name: ""
+    display_name: ""
     bind_to_monitor: 1
 
 window_rules:
@@ -339,10 +339,7 @@ keybindings:
 
   - command: "focus workspace 0"
     binding: "LMenu+0"
-  - commands:
-       - "focus workspace 0"
-       - "exec vivaldi --new-window https://github.com/users/ayushman-parasar/projects/4/views/6"
-       - "exec vivaldi --new-window https://bit.ly/new-xp-spot"
+  - commands: ["focus workspace 0", "exec %userprofile%/scoop/apps/discord/current/discord-portable.exe"]
     binding: "LMenu+Shift+0"
 
   - commands: ["move to workspace 1", "focus workspace 1"]
