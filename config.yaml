@@ -270,10 +270,10 @@ keybindings:
     binding: "LMenu+I"
 
   - command: "layout horizontal"
-    binding: "LMenu+Shift+V"
+    binding: "LMenu+Oem5"
 
   - command: "layout vertical"
-    binding: "LMenu+V"
+    binding: "LMenu+OemMinus"
 
   - command: "toggle focus mode"
     binding: "LMenu+Space"
