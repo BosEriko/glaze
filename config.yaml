@@ -304,12 +304,12 @@ keybindings:
   - command: "focus workspace 2"
     binding: "LMenu+2"
   - commands: ["focus workspace 2", "exec '%userprofile%/scoop/apps/youtube-music/current/YouTube Music.exe'"]
-    binding: "LMenu+Shift+2"
+    binding: "RMenu+2"
 
   - command: "focus workspace 3"
     binding: "LMenu+3"
   - commands: ["focus workspace 3", "exec %userprofile%/scoop/apps/vscode/current/Code.exe"]
-    binding: "LMenu+Shift+3"
+    binding: "RMenu+3"
 
   - command: "focus workspace 4"
     binding: "LMenu+4"
@@ -323,49 +323,50 @@ keybindings:
   - command: "focus workspace 7"
     binding: "LMenu+7"
   - commands: ["focus workspace 7", "exec %userprofile%/scoop/apps/chatty/current/Chatty.exe"]
-    binding: "LMenu+Shift+7"
+    binding: "RMenu+7"
 
   - command: "focus workspace 8"
     binding: "LMenu+8"
   - commands: ["focus workspace 8", "exec vivaldi --new-window https://pass.proton.me/"]
-    binding: "LMenu+Shift+8"
+    binding: "RMenu+8"
 
   - command: "focus workspace 9"
     binding: "LMenu+9"
   - commands: ["focus workspace 9", "exec %userprofile%/scoop/apps/notion/current/Notion.exe"]
-    binding: "LMenu+Shift+9"
+    binding: "RMenu+9"
 
   - command: "focus workspace 0"
     binding: "LMenu+0"
   - commands: ["focus workspace 0", "exec %userprofile%/scoop/apps/discord/current/discord-portable.exe"]
-    binding: "LMenu+Shift+0"
+    binding: "RMenu+0"
 
   - commands: ["move to workspace 1", "focus workspace 1"]
-    binding: "RMenu+1"
+    binding: "LMenu+Shift+1"
 
   - commands: ["move to workspace 2", "focus workspace 2"]
-    binding: "RMenu+2"
+    binding: "LMenu+Shift+2"
 
   - commands: ["move to workspace 3", "focus workspace 3"]
-    binding: "RMenu+3"
+    binding: "LMenu+Shift+3"
 
   - commands: ["move to workspace 4", "focus workspace 4"]
-    binding: "RMenu+4"
+    binding: "LMenu+Shift+4"
 
   - commands: ["move to workspace 5", "focus workspace 5"]
-    binding: "RMenu+5"
+    binding: "LMenu+Shift+5"
 
   - commands: ["move to workspace 6", "focus workspace 6"]
-    binding: "RMenu+6"
+    binding: "LMenu+Shift+6"
 
   - commands: ["move to workspace 7", "focus workspace 7"]
-    binding: "RMenu+7"
+    binding: "LMenu+Shift+7"
 
   - commands: ["move to workspace 8", "focus workspace 8"]
-    binding: "RMenu+8"
+    binding: "LMenu+Shift+8"
 
   - commands: ["move to workspace 9", "focus workspace 9"]
-    binding: "RMenu+9"
+    binding: "LMenu+Shift+9"
 
   - commands: ["move to workspace 0", "focus workspace 0"]
-    binding: "RMenu+0"
+    binding: "LMenu+Shift+0"
+
