@@ -27,3 +27,6 @@ curl -fsSL https://raw.githubusercontent.com/BosEriko/glaze/HEAD/install.sh | sh
 ```
 
 _Note: `config.yaml` is usually located at `%HOMEPATH%\.glaze-wm`._
+
+## Powertoys
+Opening apps by `Win (Left)` `1`~`9` is mapped from `Alt (Right)` `1`~`9` to avoid conflict using [Powertoys](https://github.com/BosEriko/powertoys/blob/master/keybindings.md#shortcuts-glazewm).
