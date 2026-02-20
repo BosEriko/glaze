@@ -164,22 +164,22 @@ keybindings:
   # Focus Windows
   - command: "focus left"
     bindings: ["LMenu+H"]
-  - command: "focus right"
-    bindings: ["LMenu+L"]
-  - command: "focus up"
-    bindings: ["LMenu+K"]
   - command: "focus down"
     bindings: ["LMenu+J"]
+  - command: "focus up"
+    bindings: ["LMenu+K"]
+  - command: "focus right"
+    bindings: ["LMenu+L"]
 
-  # Focus Windows
+  # Move Windows
   - command: "move left"
     bindings: ["LMenu+Shift+H"]
-  - command: "move right"
-    bindings: ["LMenu+Shift+L"]
-  - command: "move up"
-    bindings: ["LMenu+Shift+K"]
   - command: "move down"
     bindings: ["LMenu+Shift+J"]
+  - command: "move up"
+    bindings: ["LMenu+Shift+K"]
+  - command: "move right"
+    bindings: ["LMenu+Shift+L"]
 
   # Focus Workspace
   - command: "focus workspace 1"
@@ -252,16 +252,16 @@ keybindings:
     binding: "LMenu+U"
   - command: "resize width +2%"
     binding: "LMenu+P"
-  - command: "resize height +2%"
-    binding: "LMenu+O"
   - command: "resize height -2%"
     binding: "LMenu+I"
+  - command: "resize height +2%"
+    binding: "LMenu+O"
 
   # Layout Orientation
-  - command: "layout horizontal"
-    binding: "LMenu+Oem5"
   - command: "layout vertical"
     binding: "LMenu+OemMinus"
+  - command: "layout horizontal"
+    binding: "LMenu+Oem5"
     
   # Window Controls
   - command: "toggle focus mode"
@@ -275,4 +275,5 @@ keybindings:
   - command: "reload config"
     binding: "LMenu+Shift+R"
   
+
 
