@@ -226,15 +226,23 @@ keybindings:
     binding: "LMenu+Shift+0"
 
   # Open Applications
-  - commands: ["focus workspace 2", "exec '%userprofile%/scoop/apps/youtube-music/current/YouTube Music.exe'"]
+  - commands: ["focus workspace 1"]
+    binding: "RMenu+1"
+  - commands: ["focus workspace 2"]
     binding: "RMenu+2"
-  - commands: ["focus workspace 3", "exec '%userprofile%/scoop/apps/vscode/current/Code.exe'"]
+  - commands: ["focus workspace 3"]
     binding: "RMenu+3"
-  - commands: ["focus workspace 7", "exec '%userprofile%/scoop/apps/chatty/current/Chatty.exe'"]
+  - commands: ["focus workspace 4"]
+    binding: "RMenu+4"
+  - commands: ["focus workspace 5"]
+    binding: "RMenu+5"
+  - commands: ["focus workspace 6"]
+    binding: "RMenu+6"
+  - commands: ["focus workspace 7"]
     binding: "RMenu+7"
-  - commands: ["focus workspace 8", "exec vivaldi --new-window https://pass.proton.me/"]
+  - commands: ["focus workspace 8"]
     binding: "RMenu+8"
-  - commands: ["focus workspace 9", "exec '%userprofile%/scoop/apps/notion/current/Notion.exe'"]
+  - commands: ["focus workspace 9"]
     binding: "RMenu+9"
   - commands: ["focus workspace 0", "exec '%userprofile%/scoop/apps/discord/current/discord-portable.exe'"]
     binding: "RMenu+0"
@@ -267,3 +275,4 @@ keybindings:
   - command: "reload config"
     binding: "LMenu+Shift+R"
   
+
