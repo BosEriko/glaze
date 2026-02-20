@@ -274,6 +274,3 @@ keybindings:
   # Reload Config
   - command: "reload config"
     binding: "LMenu+Shift+R"
-  
-
-
