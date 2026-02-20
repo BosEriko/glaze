@@ -161,56 +161,33 @@ window_rules:
     match_process_name: "steamwebhelper"
 
 keybindings:
+  # Focus Windows
   - command: "focus left"
-    bindings: ["LMenu+H", "LMenu+Left"]
+    bindings: ["LMenu+H"]
   - command: "focus right"
-    bindings: ["LMenu+L", "LMenu+Right"]
+    bindings: ["LMenu+L"]
   - command: "focus up"
-    bindings: ["LMenu+K", "LMenu+Up"]
+    bindings: ["LMenu+K"]
   - command: "focus down"
-    bindings: ["LMenu+J", "LMenu+Down"]
+    bindings: ["LMenu+J"]
+
+  # Focus Windows
   - command: "move left"
-    bindings: ["LMenu+Shift+H", "LMenu+Shift+Left"]
+    bindings: ["LMenu+Shift+H"]
   - command: "move right"
-    bindings: ["LMenu+Shift+L", "LMenu+Shift+Right"]
+    bindings: ["LMenu+Shift+L"]
   - command: "move up"
-    bindings: ["LMenu+Shift+K", "LMenu+Shift+Up"]
+    bindings: ["LMenu+Shift+K"]
   - command: "move down"
-    bindings: ["LMenu+Shift+J", "LMenu+Shift+Down"]
-  - command: "resize width -2%"
-    binding: "LMenu+U"
-  - command: "resize width +2%"
-    binding: "LMenu+P"
-  - command: "resize height +2%"
-    binding: "LMenu+O"
-  - command: "resize height -2%"
-    binding: "LMenu+I"
-  - command: "layout horizontal"
-    binding: "LMenu+Oem5"
-  - command: "layout vertical"
-    binding: "LMenu+OemMinus"
-  - command: "toggle focus mode"
-    binding: "LMenu+Space"
-  - command: "toggle floating"
-    binding: "LMenu+Shift+Space"
-  - command: "set minimized"
-    binding: "LMenu+M"
-  - command: "toggle maximized"
-    binding: "LMenu+X"
-  - command: "close"
-    binding: "LMenu+Shift+Q"
-  - command: "reload config"
-    binding: "LMenu+Shift+R"
+    bindings: ["LMenu+Shift+J"]
+
+  # Focus Workspace
   - command: "focus workspace 1"
     binding: "LMenu+1"
   - command: "focus workspace 2"
     binding: "LMenu+2"
-  - commands: ["focus workspace 2", "exec '%userprofile%/scoop/apps/youtube-music/current/YouTube Music.exe'"]
-    binding: "RMenu+2"
   - command: "focus workspace 3"
     binding: "LMenu+3"
-  - commands: ["focus workspace 3", "exec %userprofile%/scoop/apps/vscode/current/Code.exe"]
-    binding: "RMenu+3"
   - command: "focus workspace 4"
     binding: "LMenu+4"
   - command: "focus workspace 5"
@@ -219,20 +196,14 @@ keybindings:
     binding: "LMenu+6"
   - command: "focus workspace 7"
     binding: "LMenu+7"
-  - commands: ["focus workspace 7", "exec %userprofile%/scoop/apps/chatty/current/Chatty.exe"]
-    binding: "RMenu+7"
   - command: "focus workspace 8"
     binding: "LMenu+8"
-  - commands: ["focus workspace 8", "exec vivaldi --new-window https://pass.proton.me/"]
-    binding: "RMenu+8"
   - command: "focus workspace 9"
     binding: "LMenu+9"
-  - commands: ["focus workspace 9", "exec %userprofile%/scoop/apps/notion/current/Notion.exe"]
-    binding: "RMenu+9"
   - command: "focus workspace 0"
     binding: "LMenu+0"
-  - commands: ["focus workspace 0", "exec %userprofile%/scoop/apps/discord/current/discord-portable.exe"]
-    binding: "RMenu+0"
+
+  # Move Workspace
   - commands: ["move to workspace 1", "focus workspace 1"]
     binding: "LMenu+Shift+1"
   - commands: ["move to workspace 2", "focus workspace 2"]
@@ -253,3 +224,46 @@ keybindings:
     binding: "LMenu+Shift+9"
   - commands: ["move to workspace 0", "focus workspace 0"]
     binding: "LMenu+Shift+0"
+
+  # Open Applications
+  - commands: ["focus workspace 2", "exec '%userprofile%/scoop/apps/youtube-music/current/YouTube Music.exe'"]
+    binding: "RMenu+2"
+  - commands: ["focus workspace 3", "exec '%userprofile%/scoop/apps/vscode/current/Code.exe'"]
+    binding: "RMenu+3"
+  - commands: ["focus workspace 7", "exec '%userprofile%/scoop/apps/chatty/current/Chatty.exe'"]
+    binding: "RMenu+7"
+  - commands: ["focus workspace 8", "exec vivaldi --new-window https://pass.proton.me/"]
+    binding: "RMenu+8"
+  - commands: ["focus workspace 9", "exec '%userprofile%/scoop/apps/notion/current/Notion.exe'"]
+    binding: "RMenu+9"
+  - commands: ["focus workspace 0", "exec '%userprofile%/scoop/apps/discord/current/discord-portable.exe'"]
+    binding: "RMenu+0"
+  
+  # Resize Windows
+  - command: "resize width -2%"
+    binding: "LMenu+U"
+  - command: "resize width +2%"
+    binding: "LMenu+P"
+  - command: "resize height +2%"
+    binding: "LMenu+O"
+  - command: "resize height -2%"
+    binding: "LMenu+I"
+
+  # Layout Orientation
+  - command: "layout horizontal"
+    binding: "LMenu+Oem5"
+  - command: "layout vertical"
+    binding: "LMenu+OemMinus"
+    
+  # Window Controls
+  - command: "toggle focus mode"
+    binding: "LMenu+Space"
+  - command: "toggle floating"
+    binding: "LMenu+Shift+Space"
+  - command: "close"
+    binding: "LMenu+Shift+Q"
+    
+  # Reload Config
+  - command: "reload config"
+    binding: "LMenu+Shift+R"
+  
