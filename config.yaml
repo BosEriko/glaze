@@ -28,45 +28,21 @@ darkblue: &darkblue "#1b1e28"
 crust: &crust "#11111b"
 
 general:
-
-  # Whether to automatically focus windows underneath the cursor.
   focus_follows_cursor: false
-
-  # Whether to jump the cursor between windows focused by the WM.
   cursor_follows_focus: false
-
-  # Whether to switch back and forth between the previously focused workspace
-  # when focusing the current workspace.
   toggle_workspace_on_refocus: false
-
-  # Whether to show floating windows as always on top.
   show_floating_on_top: false
-
-  # Amount to move floating windows by (eg. when using `alt+<hjkl>` on a floating window)
   floating_window_move_amount: "5%"
-
-  # Whether to center new floating windows.
   center_new_floating_windows: true
-
-  # *Strongly* recommended to set to 'false'. Whether to globally enable/disable
-  # window transition animations (on minimize, close, etc). Set to 'unchanged'
-  # to make no setting changes.
   window_animations: "unchanged"
 
 gaps:
-  # Gap between adjacent windows.
   inner_gap: "10px"
-
-  # Gap between windows and the screen edge.
   outer_gap: "10px"
-
-# Highlight active/inactive windows with a colored border.
-# ** Exclusive to Windows 11 due to API limitations.
 focus_borders:
   active:
     enabled: true
     color: *sapphire
-
   inactive:
     enabled: false
     color: "#ff0000"
@@ -77,7 +53,6 @@ bar:
   opacity: 1
   background: *darkblue
   foreground: *gullgray
-  # Get icons here: https://www.nerdfonts.com/cheat-sheet
   font_family: "JetbrainsMonoNL Nerd Font Mono"
   font_size: "12px"
   padding: "0px 5px"
@@ -92,7 +67,6 @@ bar:
       default_workspace_background: "transparent"
       focused_workspace_foreground: *green
       default_workspace_foreground: *overlay0
-
   components_center:
     - type: "music"
       label_not_playing: ""
@@ -101,60 +75,27 @@ bar:
       max_title_length: 30
       max_artist_length: 20
       margin: "0 0 0 15px"
-
   components_right:
     - type: "binding mode"
       background: "#ffffff33"
       margin: "0 5px 0 5px"
       padding: "5px 8px"
-
     - type: "cpu"
       label: "⚙️ {percent_usage}%"
-      # How often this counter is refreshed.
       refresh_interval_ms: 1000
       margin: "0 20px 0 0"
-
     - type: "memory"
       label: "🎟 {percent_usage}%"
-      # How often this counter is refreshed.
       refresh_interval_ms: 1000
       margin: "0 20px 0 0"
-
-    # - type: "volume"
-    #   label_low: " 🔊{volume_level}% "
-    #   label_medium: " 🔊{volume_level}% "
-    #   label_high: " 🔊{volume_level}% "
-    #   label_mute: " 🔊{volume_level}% "
-    #   margin: "0 10px 0 0"
-
-    # - type: "weather"
-    #   latitude: 28.7041
-    #   longitude: 77.1025
-    #   label: "{temperature_celsius}°C"
-    #   label_sun: "☀️ {temperature_celsius}°C"
-    #   label_moon: "🌙 {temperature_celsius}°C"
-    #   label_cloud_moon: "☁️ {temperature_celsius}°C"
-    #   label_cloud_sun: "⛅ {temperature_celsius}°C"
-    #   label_cloud_moon_rain: "🌧️ {temperature_celsius}°C"
-    #   label_cloud_sun_rain: "🌦️ {temperature_celsius}°C"
-    #   label_cloud_rain: "🌧️ {temperature_celsius}°C"
-    #   label_snow_flake: "❄️ {temperature_celsius}°C"
-    #   label_thunderstorm: "⚡ {temperature_celsius}°C"
-    #   label_cloud: "☁️ {temperature_celsius}°C"
-    #   margin: "0 20px 0 0"
-
     - type: "clock"
-      # Documentation on formatting date/time string:
-      # https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings
       time_formatting: "🕒 hh:mm tt  🗓️ ddd d/MM"
       margin: "0 10px 0 0"
-
     - type: "tiling direction"
       label_horizontal: "⮂ "
       label_vertical: "⮁ "
       background: "transparent"
       margin: "0 5px 0 10px"
-
     - type: "network"
       label_no_internet: "❎"
       label_ethernet: "✅"
@@ -170,25 +111,25 @@ workspaces:
     display_name: "󰖟"
     bind_to_monitor: 2
   - name: 2
-    display_name: ""
+    display_name: ""
     bind_to_monitor: 2
   - name: 3
-    display_name: "󰅩"
+    display_name: "󱂛"
     bind_to_monitor: 2
   - name: 4
-    display_name: ""
+    display_name: ""
     bind_to_monitor: 2
   - name: 5
-    display_name: ""
+    display_name: ""
     bind_to_monitor: 2
   - name: 6
     display_name: ""
     bind_to_monitor: 1
   - name: 7
-    display_name: ""
+    display_name: "󰭹"
     bind_to_monitor: 1
   - name: 8
-    display_name: ""
+    display_name: ""
     bind_to_monitor: 1
   - name: 9
     display_name: "󰏫"
@@ -198,175 +139,117 @@ workspaces:
     bind_to_monitor: 1
 
 window_rules:
-  # Task Manager requires admin privileges to manage and should be ignored unless running
-  # the WM as admin.
   - command: "ignore"
     match_process_name: "Taskmgr"
-
-  # Launches system dialogs as floating by default (eg. File Explorer save/open dialog).
   - command: "set floating"
     match_class_name: "#32770"
-
   - command: "set floating"
     match_process_name: "StreamAvatars"
-
   - command: "set floating"
     match_process_name: "Warudo"
-
   - command: "set floating"
     match_process_name: "cs2"
-
-  # Some applications (eg. Steam) have borders that extend past the normal border size.
   - command: "resize borders 0px -7px -7px -7px"
     match_process_name: "vivaldi"
-
   - command: "resize borders 0px -7px -7px -7px"
     match_process_name: "FortniteClient-Win64-Shipping"
-
   - command: "resize borders 0px -7px -7px -7px"
     match_process_name: "UnrealEditorFortnite-Win64-Shipping"
-
   - command: "resize borders 0px -7px -7px -7px"
     match_process_name: "EpicGamesLauncher"
-
   - command: "resize borders 0px -7px -7px -7px"
     match_process_name: "steamwebhelper"
 
 keybindings:
   - command: "focus left"
     bindings: ["LMenu+H", "LMenu+Left"]
-
   - command: "focus right"
     bindings: ["LMenu+L", "LMenu+Right"]
-
   - command: "focus up"
     bindings: ["LMenu+K", "LMenu+Up"]
-
   - command: "focus down"
     bindings: ["LMenu+J", "LMenu+Down"]
-
   - command: "move left"
     bindings: ["LMenu+Shift+H", "LMenu+Shift+Left"]
-
   - command: "move right"
     bindings: ["LMenu+Shift+L", "LMenu+Shift+Right"]
-
   - command: "move up"
     bindings: ["LMenu+Shift+K", "LMenu+Shift+Up"]
-
   - command: "move down"
     bindings: ["LMenu+Shift+J", "LMenu+Shift+Down"]
-
   - command: "resize width -2%"
     binding: "LMenu+U"
-
   - command: "resize width +2%"
     binding: "LMenu+P"
-
   - command: "resize height +2%"
     binding: "LMenu+O"
-
   - command: "resize height -2%"
     binding: "LMenu+I"
-
   - command: "layout horizontal"
     binding: "LMenu+Oem5"
-
   - command: "layout vertical"
     binding: "LMenu+OemMinus"
-
   - command: "toggle focus mode"
     binding: "LMenu+Space"
-
   - command: "toggle floating"
     binding: "LMenu+Shift+Space"
-
   - command: "set minimized"
     binding: "LMenu+M"
-
   - command: "toggle maximized"
     binding: "LMenu+X"
-
   - command: "close"
     binding: "LMenu+Shift+Q"
-
-  # - command: "exit wm"
-  #   binding: "LMenu+Shift+E"
-
   - command: "reload config"
     binding: "LMenu+Shift+R"
-
-  # Launch CMD terminal (Alternatively `exec wt` or `exec %ProgramFiles%/Git/git-bash.exe`
-  # to start Windows Terminal and Git Bash respectively.
   - command: "focus workspace 1"
     binding: "LMenu+1"
-
   - command: "focus workspace 2"
     binding: "LMenu+2"
   - commands: ["focus workspace 2", "exec '%userprofile%/scoop/apps/youtube-music/current/YouTube Music.exe'"]
     binding: "RMenu+2"
-
   - command: "focus workspace 3"
     binding: "LMenu+3"
   - commands: ["focus workspace 3", "exec %userprofile%/scoop/apps/vscode/current/Code.exe"]
     binding: "RMenu+3"
-
   - command: "focus workspace 4"
     binding: "LMenu+4"
-
   - command: "focus workspace 5"
     binding: "LMenu+5"
-
   - command: "focus workspace 6"
     binding: "LMenu+6"
-
   - command: "focus workspace 7"
     binding: "LMenu+7"
   - commands: ["focus workspace 7", "exec %userprofile%/scoop/apps/chatty/current/Chatty.exe"]
     binding: "RMenu+7"
-
   - command: "focus workspace 8"
     binding: "LMenu+8"
   - commands: ["focus workspace 8", "exec vivaldi --new-window https://pass.proton.me/"]
     binding: "RMenu+8"
-
   - command: "focus workspace 9"
     binding: "LMenu+9"
   - commands: ["focus workspace 9", "exec %userprofile%/scoop/apps/notion/current/Notion.exe"]
     binding: "RMenu+9"
-
   - command: "focus workspace 0"
     binding: "LMenu+0"
   - commands: ["focus workspace 0", "exec %userprofile%/scoop/apps/discord/current/discord-portable.exe"]
     binding: "RMenu+0"
-
   - commands: ["move to workspace 1", "focus workspace 1"]
     binding: "LMenu+Shift+1"
-
   - commands: ["move to workspace 2", "focus workspace 2"]
     binding: "LMenu+Shift+2"
-
   - commands: ["move to workspace 3", "focus workspace 3"]
     binding: "LMenu+Shift+3"
-
   - commands: ["move to workspace 4", "focus workspace 4"]
     binding: "LMenu+Shift+4"
-
   - commands: ["move to workspace 5", "focus workspace 5"]
     binding: "LMenu+Shift+5"
-
   - commands: ["move to workspace 6", "focus workspace 6"]
     binding: "LMenu+Shift+6"
-
   - commands: ["move to workspace 7", "focus workspace 7"]
     binding: "LMenu+Shift+7"
-
   - commands: ["move to workspace 8", "focus workspace 8"]
     binding: "LMenu+Shift+8"
-
   - commands: ["move to workspace 9", "focus workspace 9"]
     binding: "LMenu+Shift+9"
-
   - commands: ["move to workspace 0", "focus workspace 0"]
     binding: "LMenu+Shift+0"
-
